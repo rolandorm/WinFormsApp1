@@ -13,7 +13,7 @@ namespace WinFormsApp1.Clases
         public int IdPunto { get; set; }
         public bool Activo { get; set; }
         public string Especie { get; set; }
-        public Asignacion()
+        public Asignacion() { }
         public Asignacion(Asignacion asignacion)
         {
             Longitud = asignacion.Longitud;
