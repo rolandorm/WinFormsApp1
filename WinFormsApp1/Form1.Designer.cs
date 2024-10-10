@@ -36,6 +36,7 @@
             dataGridView1 = new DataGridView();
             label3 = new Label();
             textBox3 = new TextBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -108,11 +109,22 @@
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 6;
             // 
+            // button2
+            // 
+            button2.Location = new Point(78, 359);
+            button2.Name = "button2";
+            button2.Size = new Size(135, 29);
+            button2.TabIndex = 8;
+            button2.Text = "Descargar Excel";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(textBox3);
             Controls.Add(dataGridView1);
@@ -138,5 +150,6 @@
         private DataGridView dataGridView1;
         private Label label3;
         private TextBox textBox3;
+        private Button button2;
     }
 }
