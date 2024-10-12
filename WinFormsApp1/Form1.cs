@@ -22,6 +22,11 @@ namespace WinFormsApp1
             int maximo = Convert.ToInt32(textBox2.Text);
             int minimo = Convert.ToInt32((textBox3.Text));
 
+            if (puntosTotales < 0 || maximo < 0 || minimo < 0)
+            {
+
+            }
+
             GeneradorAleatorios generador = new GeneradorAleatorios();
             List<Asignacion> listaSalida = generador.CrearListaOrigen(puntosTotales, minimo, maximo);
             llenarGrid(listaSalida);
